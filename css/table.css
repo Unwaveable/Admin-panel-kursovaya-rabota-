@@ -1,0 +1,134 @@
+div.table-title {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+  padding: 5px;
+  width: 100%;
+}
+
+.table-title h3 {
+  color: #fafafa;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+/*** Стили таблиц **/
+
+.table-fill {
+  background: white;
+  border-radius: 15px;
+  border-collapse: collapse;
+  margin: auto;
+  height: 320px;
+  padding: 5px;
+  width: 900px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.3);
+  animation: float 5s infinite;
+}
+
+th {
+  color: #ffffff;
+  background: var(--primary-color);
+  border-bottom: 1px solid #b1b1b1;
+  border-right: 1px solid #b1b1b1;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 24px;
+  text-align: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  empty-cells: hide;
+}
+
+th:first-child {
+  border-top-left-radius: 3px;
+}
+
+th:last-child {
+  border-top-right-radius: 3px;
+  border-right: none;
+}
+
+tr {
+  border-top: 1px solid #c1c3d1;
+  border-bottom: 1px solid #c1c3d1;
+  color: #666b85;
+  font-size: 18px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+  empty-cells: hide;
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+  background: #ffffff;
+}
+
+td {
+  background: #ffffff;
+  padding: 16px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 400;
+  font-size: 18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #c1c3d1;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.dash-content-up {
+  margin-top: 80px;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dash-content-down {
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 5px;
+  padding: 20px;
+}
+tr:hover td {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+.schedule-week {
+  padding: 18px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+}
+

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00C7FF;
+    column-gap: 30px;
+}
+
+.form {
+    position: absolute;
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 6px;
+    background: #FFF;
+}
+
+.h800 {
+    height: 100%;
+}
+
+.h570 {
+    height: 570px;
+}
+
+.form.signup {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.forms.show-signup .form.signup {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.forms.show-signup .form.login {
+    opacity: 0;
+    pointer-events: none;
+}
+
+header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.field input,
+.field button {
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input {
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid#CACACA;
+}
+
+.field input:focus {
+    border-bottom-width: 2px;
+}
+
+.eye-icon {
+    position: relative;
+    top: -50%;
+    right: -340px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.field button {
+    color: #fff;
+    background-color: #00C7FF;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field button:hover {
+    background-color: #00acdb;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 31px;
+}
+
+.form-link-pswd {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}
+
+.form-link span,
+.form-link a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form a {
+    color: #00C7FF;
+    text-decoration: none;
+}
+
+.form-content a:hover {
+    text-decoration: underline;
+}
+
+.line {
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+
+.line::before {
+    content: 'ИЛИ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding: 0 15px;
+}
+
+.sip-title::after {
+    content: " ";
+    background: #d4d4d4;
+    width: 140px;
+    height: 1px;
+    top: 190px;
+    right: 145px;
+    position: absolute;
+}
+
+.media-options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sip-description {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sip-subtitle {
+    font-weight: normal;
+    font-size: 15px;
+
+}
+
+.sip-title {
+    font-weight: normal;
+}
+
+.field__wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.field__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.field__file-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.field__file-fake {
+    height: 50px;
+    width: calc(100% - 130px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 15px;
+    border: 1px solid #c7c7c7;
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+}
+
+.field__file-button {
+    width: 130px;
+    height: 50px;
+    background: #00C7FF;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.field__file-button:hover {
+    background-color: #00acdb;
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        padding: 20px 10px;
+    }
+}
